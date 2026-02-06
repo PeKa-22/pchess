@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajedrez — Local 1v1</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- chess.js para reglas y validación -->
+  <script src="https://cdn.jsdelivr.net/npm/chess.js@1.0.0/chess.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Ajedrez — Local 1 vs 1</h1>
+      <div class="controls">
+        <div class="turn-indicator">Turno: <span id="turn">—</span></div>
+        <button id="reset">Reiniciar</button>
+      </div>
+    </header>
+
+    <section class="board-and-sidebar">
+      <div id="board" class="board" aria-label="Tablero de ajedrez"></div>
+
+      <aside class="sidebar">
+        <div class="status">
+          <p id="game-status">Estado del juego: —</p>
+          <p id="in-check" class="danger"></p>
+        </div>
+        <div class="notes">
+          <p>Modo local: dos jugadores en el mismo dispositivo.</p>
+          <p>Movimientos: click o arrastrar (drag & drop). Promoción a reina por defecto.</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <small>Proyecto educativo — listo para publicar en GitHub Pages / Netlify / Vercel</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
